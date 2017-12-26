@@ -12,6 +12,7 @@ class WindowedProgram{
 		JFrame frame = new JFrame("Button");// Creates a new frame
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);	// Makes window centered on screen (null does this)
+		frame.getRootPane().putClientProperty("apple.awt.fullscreenable", Boolean.valueOf(true)); //Adds macOS fullscreen capabilities
 		JPanel panel = new JPanel();		// Create new panel to hold contents
 		
 		//Adding Lables

@@ -12,6 +12,7 @@ class LuckyNumbers{
 		JFrame frame = new JFrame("Button");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 300);	// Set pizxel size of window
+		frame.getRootPane().putClientProperty("apple.awt.fullscreenable", Boolean.valueOf(true)); //Adds macOS fullscreen capabilities
 		frame.setLocationRelativeTo(null);
 		JPanel panel = new JPanel();
 		
