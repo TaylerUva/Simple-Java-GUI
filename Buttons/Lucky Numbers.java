@@ -2,13 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class WindowedProgram{
+class LuckyNumbers{
 
 	public static void loadWindow() {
+		//Add icon
+		ImageIcon icon = new ImageIcon("TULogo.png");
+		
 		//Create and set up the window.
-		JFrame frame = new JFrame("ButtonDemo");
+		JFrame frame = new JFrame("Button");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.setSize(500, 300);	// Set pizxel size of window
+		frame.setSize(500, 300);	// Set pizxel size of window
 		frame.setLocationRelativeTo(null);
 		JPanel panel = new JPanel();
 		
@@ -21,14 +24,13 @@ class WindowedProgram{
 		button.setActionCommand("Pressed");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				JOptionPane.showMessageDialog(frame, "Yay! You pressed me!");
+				JOptionPane.showMessageDialog(frame, "Yay! You pressed me!", "Button Clicked", JOptionPane.INFORMATION_MESSAGE, icon);
 			}
 		});
 		panel.add(button);
 		
 		//LoadWindow
 		frame.setContentPane(panel);
-		frame.pack();
 		frame.setVisible(true);
 		
 	}
