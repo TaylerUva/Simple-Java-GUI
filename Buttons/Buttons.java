@@ -6,7 +6,7 @@ class WindowedProgram{
 
 	public static void loadWindow() {
 		//Add icon
-		ImageIcon icon = new ImageIcon("images\TULogo.png");
+		ImageIcon icon = new ImageIcon("resources/TULogo.png");
 		
 		//Create and set up the window.
 		JFrame frame = new JFrame("Button");// Creates a new frame
