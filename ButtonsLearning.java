@@ -6,10 +6,10 @@ class WindowedProgram{
 
 	public static void loadWindow() {
 		//Add icon
-		ImageIcon icon = new ImageIcon("resources/TULogo.png");
+		final ImageIcon icon = new ImageIcon("resources/TULogo.png");
 		
 		//Create and set up the window.
-		JFrame frame = new JFrame("Button");// Creates a new frame
+		final JFrame frame = new JFrame("Button");// Creates a new frame
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);	// Makes window centered on screen (null does this)
 		frame.getRootPane().putClientProperty("apple.awt.fullscreenable", Boolean.valueOf(true)); //Adds macOS fullscreen capabilities
