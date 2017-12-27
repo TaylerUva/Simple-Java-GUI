@@ -9,10 +9,10 @@ class FortuneTeller{
 
 	private  static void loadWindow() {
 		//Add icon
-		ImageIcon icon = new ImageIcon("resources/questionBlock.png");
+		final ImageIcon icon = new ImageIcon("resources/questionBlock.png");
 		
 		//Create and set up the window.
-		JFrame frame = new JFrame("Lucky Number");
+		final JFrame frame = new JFrame("Lucky Number");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getRootPane().putClientProperty("apple.awt.fullscreenable", Boolean.valueOf(true)); //Adds macOS fullscreen capabilities
 		
@@ -68,7 +68,6 @@ class FortuneTeller{
 	}
 	
 	public static void main(String[] args) {
-		readRandomFortune();
 		loadWindow(); 
 	}
 }
