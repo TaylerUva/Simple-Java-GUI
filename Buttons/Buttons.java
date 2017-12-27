@@ -6,7 +6,7 @@ class WindowedProgram{
 
 	public static void loadWindow() {
 		//Add icon
-		ImageIcon icon = new ImageIcon("TULogo.png");
+		ImageIcon icon = new ImageIcon("images\TULogo.png");
 		
 		//Create and set up the window.
 		JFrame frame = new JFrame("Button");// Creates a new frame
@@ -21,7 +21,6 @@ class WindowedProgram{
 		
 		//Adding Regular Button
 		JButton button = new JButton("Press Me");
-		button.setActionCommand("Pressed");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				JOptionPane.showMessageDialog(frame, "Yay! You pressed me!", "Button Clicked", JOptionPane.INFORMATION_MESSAGE, icon);
